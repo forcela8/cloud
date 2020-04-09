@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="cloud.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="picker" id="picker" multiple>
+            <input type="submit" name="upload" value="Uploader votre fichier">
+        </form>
+        <input type="submit" id="dial" name="dialog" value="dial">
+    </div>
+    <div id="dialog" class="dialog" hidden>
+        <div class="dialog-container">
+            <div class="title">
+                <p class="">Le fichier existe déjà. Voulez-vous le remplacer ?</p>
+            </div>
+            <div class="container-button">
+                <button id="replace" class="replace">Remplacer</button>
+                <button id="cancel" class="cancel">Annuler</button> 
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function showDialog(){
+            $("#dialog").removeAttr("hidden");
+        }
+        $(document).ready(function (){
+            $("#dial").click(function(){
+                showDialog();
+            });
+        });
+    </script>
+</body>
+</html>

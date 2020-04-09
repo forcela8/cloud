@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Renvoye mail de confirmation</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="container-token" id="container-token">
+	<div class="cont">
+		<form action="resendToken.php" method="POST">
+			<h1 class="text titleToken">Renvoyer le mail de confirmation</h1>
+            <input class="email" type="email" name="mailToken" id="mailToken" placeholder="Email " required/>
+            <button class="send" type="submit">Envoyer</button>
+		</form>
+    </div>
+</div>
+</body>
+</html>
