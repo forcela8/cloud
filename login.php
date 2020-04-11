@@ -8,10 +8,10 @@ function encrypt($passwordNonHash){
 	$options = 0; 
 	
 	// Non-NULL Initialization Vector for encryption 
-	$encryption_iv = '1572642154630';
+	$encryption_iv = '';
 	
 	// Store the encryption key 
-	$encryption_key = "CloudFromForcela123456"; 
+	$encryption_key = ""; 
 	
 	// Use openssl_encrypt() function to encrypt the data 
 	$encryption = openssl_encrypt($passwordNonHash, $ciphering, $encryption_key, $options, $encryption_iv); 
