@@ -1,0 +1,46 @@
+.page_500 {
+    padding: 2em 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
+  
+.gifError {
+    
+    background-image: url(https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif);
+    height: 30em;
+    background-position: center;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.contant_box_500 {  
+    margin-top: -50px;
+}
+  
+.bottom{
+    margin-top: 1em;
+}
+
+.returnButn{
+    margin-top: 3.2em;
+}
+
+.return{
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 1em;
+    appearance: none;
+    background: transparent;
+    border: 1px solid #1669a1;
+    color: black;
+}
+.return:hover{
+    transition: 0.4s ease-in-out;
+    color: white;
+    text-decoration: none;
+    background: #1669a1;
+}
